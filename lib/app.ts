@@ -10,6 +10,9 @@ const log = require('ololog').configure({ locate: false })
 let crypto_arr: Array<object> = []
 let user_agent: any
 
+
+log.red('test')
+
 class App {
 	constructor() {
 		this.app = express()

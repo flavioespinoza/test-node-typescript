@@ -19,6 +19,7 @@ const error_1 = require("./error");
 const log = require('ololog').configure({ locate: false });
 let crypto_arr = [];
 let user_agent;
+log.red('test');
 class App {
     constructor() {
         this._get_data = (route) => __awaiter(this, void 0, void 0, function* () {
