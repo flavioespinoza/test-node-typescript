@@ -13,14 +13,15 @@ const log = require('ololog')
  * @param {{fs:writeFile}} Create and write to file
  * */
 fs.writeFile(path.join(__dirname, '/test', 'hello.txt'), 'Hello World!', (err) => {
-	if (err) throw err
+    if (err) throw err
+    
 })
 
 /**
  * @param {{fs:appendFile}} Appends to existing file
  * */
 fs.appendFile(path.join(__dirname, '/test', 'hello.txt'), ' I love Node.js!', (err) => {
-	if (err) throw err
+  if (err) throw err
 })
 
 /**
