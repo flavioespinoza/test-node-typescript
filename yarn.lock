@@ -21,6 +21,16 @@
     reflect-metadata "^0.1.12"
     tslib "^1.8.1"
 
+"@flavioespinoza/log_log@^1.0.52":
+  version "1.0.52"
+  resolved "https://registry.yarnpkg.com/@flavioespinoza/log_log/-/log_log-1.0.52.tgz#6caa0f45543976f11d9be5754da610434e47c2ae"
+  integrity sha512-yFKVLIypXJO2fkxtJ6x+X2ZgZJ76o+ykb6U6XqKulgbPBPq0sbi+a7QKjdh73YMgnRfjiZDI3jkIxxj+LPc2PQ==
+  dependencies:
+    ansicolor "^1.1.81"
+    esm "^3.2.14"
+    lodash "^4.17.11"
+    ololog "^1.1.117"
+
 "@types/axios@^0.14.0":
   version "0.14.0"
   resolved "https://registry.yarnpkg.com/@types/axios/-/axios-0.14.0.tgz#ec2300fbe7d7dddd7eb9d3abf87999964cafce46"
@@ -155,7 +165,7 @@ ansi-styles@^3.2.1:
   dependencies:
     color-convert "^1.9.0"
 
-ansicolor@^1.1.78:
+ansicolor@^1.1.78, ansicolor@^1.1.81:
   version "1.1.81"
   resolved "https://registry.yarnpkg.com/ansicolor/-/ansicolor-1.1.81.tgz#9ccf4e5d129dd77df1eb907a41d7e1f4cfcae015"
   integrity sha512-uSggNDl++k+w9MUeAWoPsKMa9ekTWp50FzOf2LtxH4muRBANuToT2zaMHC47HJ6kySzos95P+2aSJ5DzIJ98sQ==
@@ -1205,6 +1215,11 @@ escodegen@1.8.x:
   optionalDependencies:
     source-map "~0.2.0"
 
+esm@^3.2.14:
+  version "3.2.18"
+  resolved "https://registry.yarnpkg.com/esm/-/esm-3.2.18.tgz#54e9276449ab832b01240069ae66bf245785c767"
+  integrity sha512-1UENjnnI37UDp7KuOqKYjfqdaMim06eBWnDv37smaxTIzDl0ZWnlgoXwsVwD9+Lidw+q/f1gUf2diVMDCycoVw==
+
 esprima@2.7.x, esprima@^2.7.1:
   version "2.7.3"
   resolved "https://registry.yarnpkg.com/esprima/-/esprima-2.7.3.tgz#96e3b70d5779f6ad49cd032673d1c312767ba581"
@@ -1685,7 +1700,7 @@ lodash.toarray@^4.4.0:
   resolved "https://registry.yarnpkg.com/lodash.toarray/-/lodash.toarray-4.4.0.tgz#24c4bfcd6b2fba38bfd0594db1179d8e9b656561"
   integrity sha1-JMS/zWsvuji/0FlNsRedjptlZWE=
 
-lodash@^4.17.10, lodash@^4.17.4, lodash@^4.17.5:
+lodash@^4.17.10, lodash@^4.17.11, lodash@^4.17.4, lodash@^4.17.5:
   version "4.17.11"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.11.tgz#b39ea6229ef607ecd89e2c8df12536891cac9b8d"
   integrity sha512-cQKh8igo5QUhZ7lg38DYWAxMvjSAKG0A8wGSVimP07SIUEK2UO+arSRKbRZWtelMtN5V0Hkwh5ryOto/SshYIg==
@@ -1888,7 +1903,7 @@ object-assign@^4.0.1:
   resolved "https://registry.yarnpkg.com/object-assign/-/object-assign-4.1.1.tgz#2109adc7965887cfc05cbbd442cac8bfbb360863"
   integrity sha1-IQmtx5ZYh8/AXLvUQsrIv7s2CGM=
 
-ololog@^1.1.103:
+ololog@^1.1.103, ololog@^1.1.117:
   version "1.1.120"
   resolved "https://registry.yarnpkg.com/ololog/-/ololog-1.1.120.tgz#6e285ba57093de2689474fa36ff07bbd8132fac0"
   integrity sha512-l4DMG137w2ZSlFplsNZ1gWPoHOGEAOQ+fHdnA2Wcpk4xSTNUMOv/XM400kpj126sMagzhB/2B17TJ/0kOgUClA==

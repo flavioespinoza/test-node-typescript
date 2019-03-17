@@ -57,6 +57,7 @@
 	 * Using `yarn`
 	 *
 	 * @static
+	 * @memberOf _n
 	 * @since 1.0.0
 	 * @category Install
 	 * @example
@@ -71,6 +72,7 @@
 	 * Using `npm`
 	 *
 	 * @static
+	 * @memberOf _n
 	 * @since 1.0.0
 	 * @category Install
 	 * @example
@@ -85,6 +87,7 @@
 	 * Import using `esm` or `TypeScript`
 	 *
 	 * @static
+	 * @memberOf _n
 	 * @since 1.0.0
 	 * @category Import
 	 * @example
@@ -108,6 +111,7 @@
 	 * Import individual ES Modules using `esm` or `TypeScript`
 	 *
 	 * @static
+	 * @memberOf _n
 	 * @since 1.0.0
 	 * @category Import
 	 * @example
@@ -130,6 +134,7 @@
 	 * Import using `require`
 	 *
 	 * @static
+	 * @memberOf _n
 	 * @since 1.0.0
 	 * @category Require
 	 * @example
