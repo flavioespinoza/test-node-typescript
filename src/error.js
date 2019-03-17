@@ -6,4 +6,3 @@ function _error(method, err) {
     log.lightYellow(`${method} ERROR:`, err.message);
 }
 exports._error = _error;
-//# sourceMappingURL=error.js.map

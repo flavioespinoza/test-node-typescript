@@ -1,12 +1,4 @@
 "use strict";
-var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
-    return new (P || (P = Promise))(function (resolve, reject) {
-        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-        function step(result) { result.done ? resolve(result.value) : new P(function (resolve) { resolve(result.value); }).then(fulfilled, rejected); }
-        step((generator = generator.apply(thisArg, _arguments || [])).next());
-    });
-};
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
@@ -19,53 +11,28 @@ const error_1 = require("./error");
 const log = require('ololog').configure({ locate: false });
 let crypto_arr = [];
 let user_agent;
-log.red('test');
+/**
+ * Node App Server
+ *
+ * @static
+ * @memberOf _f
+ * @since 1.0.0
+ * @category _node
+ * @param  {} {this.app=express(
+ * @example
+ *
+ * const _f = require('flodash')
+ *
+ * const PORT = 7001
+ * _f.app.listen(PORT, () => {
+ *		console.log()
+ * })
+ *
+ *
+ */
 class App {
     constructor() {
-        this._get_data = (route) => __awaiter(this, void 0, void 0, function* () {
-            let _interval = '1m';
-            let _test_markets_all = [
-                {
-                    base: 'CCL',
-                    quote: 'USD',
-                    symbol: 'CCL/USDT'
-                },
-                {
-                    base: 'CCL',
-                    quote: 'ETH',
-                    symbol: 'CCL/ETH'
-                },
-                {
-                    base: 'BTC',
-                    quote: 'USDT',
-                    symbol: 'BTC/USDT'
-                },
-                {
-                    base: 'ETH',
-                    quote: 'USDT',
-                    symbol: 'ETH/USDT'
-                },
-                {
-                    base: 'ETH',
-                    quote: 'BTC',
-                    symbol: 'ETH/BTC'
-                },
-                {
-                    base: 'ADA',
-                    quote: 'USDT',
-                    symbol: 'ADA/USDT'
-                },
-                {
-                    base: 'ADA',
-                    quote: 'BTC',
-                    symbol: 'ADA/BTC'
-                },
-                {
-                    base: 'ADA',
-                    quote: 'ETH',
-                    symbol: 'ADA/ETH'
-                }
-            ];
+        this._get_data = async (route) => {
             let _test_markets = [
                 {
                     base: 'BTC',
@@ -77,11 +44,11 @@ class App {
             let _base = _test_markets[0].base;
             let _quote = _test_markets[0].quote;
             let _url = this._url(_base, _quote, 2);
-            yield this._rest_client(_market_name, _url, _test_markets[0]);
+            await this._rest_client(_market_name, _url, _test_markets[0]);
             return new Promise((resolve, reject) => {
                 resolve(route);
             });
-        });
+        };
         this.app = express();
         this._config();
         this._routes();
@@ -173,4 +140,3 @@ class App {
     }
 }
 exports.default = new App().app;
-//# sourceMappingURL=app.js.map

@@ -1,7 +1,7 @@
 import express = require('express')
 import bodyParser = require('body-parser')
-import { Request, Response } from 'express'
 import axios from 'axios'
+import { Request, Response } from 'express'
 import _ from 'lodash'
 import { _error } from './error'
 
@@ -10,9 +10,25 @@ const log = require('ololog').configure({ locate: false })
 let crypto_arr: Array<object> = []
 let user_agent: any
 
-
-log.red('test')
-
+/**
+ * Node App Server
+ *
+ * @static
+ * @memberOf _f
+ * @since 1.0.0
+ * @category _node
+ * @param  {} {this.app=express(
+ * @example
+ *
+ * const _f = require('flodash')
+ *
+ * const PORT = 7001
+ * _f.app.listen(PORT, () => {
+ *		console.log()
+ * })
+ *
+ *
+ */
 class App {
 	constructor() {
 		this.app = express()
@@ -128,51 +144,6 @@ class App {
 	}
 
 	private _get_data = async (route: string) => {
-		let _interval = '1m'
-
-		let _test_markets_all = [
-			{
-				base: 'CCL',
-				quote: 'USD',
-				symbol: 'CCL/USDT'
-			},
-			{
-				base: 'CCL',
-				quote: 'ETH',
-				symbol: 'CCL/ETH'
-			},
-			{
-				base: 'BTC',
-				quote: 'USDT',
-				symbol: 'BTC/USDT'
-			},
-			{
-				base: 'ETH',
-				quote: 'USDT',
-				symbol: 'ETH/USDT'
-			},
-			{
-				base: 'ETH',
-				quote: 'BTC',
-				symbol: 'ETH/BTC'
-			},
-			{
-				base: 'ADA',
-				quote: 'USDT',
-				symbol: 'ADA/USDT'
-			},
-			{
-				base: 'ADA',
-				quote: 'BTC',
-				symbol: 'ADA/BTC'
-			},
-			{
-				base: 'ADA',
-				quote: 'ETH',
-				symbol: 'ADA/ETH'
-			}
-		]
-
 		let _test_markets = [
 			{
 				base: 'BTC',
